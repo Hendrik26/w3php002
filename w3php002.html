@@ -1,0 +1,75 @@
+<html>
+    <head>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	   <script>
+	      //var buttonClick = function(){
+		  //  name = document.getElementById("name").value;
+		//	email = document.getElementById("email").value;
+		//	zahl01 = parseInt(document.getElementById("zahl01").value);
+		//	zahl02 = parseInt(document.getElementById("zahl02").value);
+		//	//summe = zahl01 + zahl02;
+		//	//document.getElementById("out").innerHTML = name + " " + summe + " " + email;
+		//	 $.post("welcome.php", { name: name });
+		//	 summe = zahl01 + zahl02;
+		  //}
+
+          function quark(){
+              var i = 1;
+              i = i + 2;
+              i = i + 3;
+              document.getElementById("nameform").value = document.getElementById("nameform").value.trim() + "Quark";
+
+          }
+
+          function myIncreaseInput() { /* prüfen, ob Computername vorhanden und Passwort mindestens 8 Zeichen lang ist */
+              var test = 3 + 4;
+              return false;
+	          var zwisch = parseInt(document.getElementById("zahl01form").value.trim())
+				+ 30;
+              document.getElementById("zahl01form").value = zwisch;
+
+
+			//var zwisch = document.getElementById("zahl01form").value.trim() + "0";
+            //document.getElementById("zahl01form").value = zwisch;			
+			
+}
+	   </script>
+	</head>
+	<body>
+
+        <script>
+            var myform = document.getElementById("myform");
+            myform.addEventListener('submit',function (evt) {
+                var error = true;
+                ///...…
+                increaseInput();
+                ///....
+               if (error) {
+                   evt.preventDefault();
+               }
+            });
+
+        </script>
+
+        <form id="myform" action="welcome.php" method="post">
+			Name: <input type="text" id="nameform" name="name"><br>
+			E-mail: <input type="text" id="emailform" name="email"><br>
+			Zahl01: <input type="text" id="zahl01form" name="Zahl01"><br>
+			Zahl02: <input type="text" id="zahl02form" name="Zahl02"><br>
+			<input type="submit"  >
+            <!-- onClick="return increaseInput();" -->
+		</form>
+		
+		<!-- div>
+			Name: <input type="text" id="name" name="name"><br>
+			E-mail: <input type="text" id="email" name="email"><br>
+			Zahl 01: <input type="text" id="zahl01" name="zahl01"><br>
+			Zahl 02: <input type="text" id="zahl02" name="zahl02"><br>
+			<button type="button" id="button" onclick=buttonClick()> Bitte klicken </button>
+			<div id="out">
+			<div>
+			<br>
+		</div --> 
+
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="PHP XAMPP">
+    <serverData>
+      <paths name="PHP XAMPP">
+        <serverdata>
+          <mappings>
+            <mapping deploy="\w3php002" local="$PROJECT_DIR$" web="w3php002" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="w3php002xampp">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
