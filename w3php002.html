@@ -22,8 +22,15 @@
           }
 
           function myIncreaseInput() { /* prüfen, ob Computername vorhanden und Passwort mindestens 8 Zeichen lang ist */
-              var test = 3 + 4;
-              return false;
+              var mII = 3 + 4;
+              var valid = true;
+              valid = valid && (0 < document.getElementById("nameform").value.trim().length);
+              valid = valid && (0 < document.getElementById("emailform").value.trim().length);
+              valid = valid && (0 < document.getElementById("zahl01form").value.trim().length);
+              valid = valid && (0 < document.getElementById("zahl02form").value.trim().length);
+              valid = valid && !isNaN(document.getElementById("zahl01form").value.trim());
+              valid = valid && !isNaN(document.getElementById("zahl02form").value.trim());
+              //return valid;
 	          var zwisch = parseInt(document.getElementById("zahl01form").value.trim())
 				+ 30;
               document.getElementById("zahl01form").value = zwisch;
@@ -32,7 +39,7 @@
 			//var zwisch = document.getElementById("zahl01form").value.trim() + "0";
             //document.getElementById("zahl01form").value = zwisch;			
 			
-}
+		  	return valid;}
 	   </script>
 	</head>
 	<body>
